@@ -29,9 +29,9 @@ jobs:
     
     env:
       VERSION: ${{ github.sha }}
-      CONTAINER_REGISTRY: ${{ secrets.CONTAINER_REGISTRY }}
-      REGISTRY_UN: ${{ secrets.REGISTRY_UN }}
-      REGISTRY_PW: ${{ secrets.REGISTRY_PW  }}
+      CONTAINER_REGISTRY: ${{ secrets.ACR_LOGIN_SERVER }}
+      REGISTRY_UN: ${{ secrets.ACR_USERNAME }}
+      REGISTRY_PW: ${{ secrets.ACR_PASSWORD  }}
       NAME: metadata
       DIRECTORY: metadata
 
